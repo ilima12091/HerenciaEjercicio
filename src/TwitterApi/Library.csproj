@@ -1,13 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TwitterApi</AssemblyName>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="..\TwitterApi\Library.csproj"/>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
-    <ItemGroup>
-    <PackageReference Include="..\CognitiveApi\Library.csproj"/>
-  </ItemGroup>
-
 </Project>
