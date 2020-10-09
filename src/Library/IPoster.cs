@@ -5,8 +5,6 @@ namespace PII_Herencia
 {
     public interface IPoster
     {
-        void AddConductor(Conductor c);
-
-        void AddPasajero(Pasajero p);
+        void Add(Usuario usuario);
     }
 }

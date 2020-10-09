@@ -7,11 +7,22 @@ namespace PII_Herencia
     {
         public string Biografia {get; set;}
 
-        public Vehiculo Vehiculo {get; set;}
+        public string Matricula {get; set;}
 
-        public void Calificar(int c)
+        public Conductor(string nombre, string apellido, int cedula, string foto, string biografia, string matricula) : base(nombre, apellido, cedula, foto)
         {
-            
+            this.Biografia = biografia;
+            this.Matricula = matricula;
+        }
+
+        public override void Calificar(int c)
+        {
+            this.calificaciones.Add(c);
+        }
+
+        public override string MensajePost()
+        {
+            return "Bienvenido al nuevo conductor " + this.Nombre + " " + this.Apellido + "!!!" + "\n" + "Bio:" + "\n" + this.Biografia;
         }
     }
 }
