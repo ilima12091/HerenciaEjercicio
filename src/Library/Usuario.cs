@@ -3,6 +3,10 @@ using System.Collections.Generic;
 
 namespace PII_Herencia
 {
+    /*
+        La clase usuario es abstract porque decidimos que algunos métodos que tiene deberían ser implementados por
+        las clases que hereden de ella, ya que la forma de calificar puede ser distinta para un conductor o un pasajero.
+    */
     public abstract class Usuario
     {
         protected List<int> calificaciones;

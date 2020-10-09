@@ -3,6 +3,10 @@ using TwitterUCU;
 
 namespace PII_Herencia
 {
+    /*
+        El método Add(Usuario usuario) permite que se puedan agregar más tipos de usuario al programa y puede seguir
+        funcionando sin necesidad de que se hagan cambios.
+    */
     public class TwitterPoster : IPoster
     {
         public void Add(Usuario usuario)
