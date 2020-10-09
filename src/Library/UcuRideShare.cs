@@ -15,8 +15,11 @@ namespace PII_Herencia
         public void Add(Usuario usuario)
         {
             Usuarios.Add(usuario);
-            TwitterPoster TWPoster = new TwitterPoster();
-            TWPoster.Add(usuario);
+            if(CognitiveManager.FotoValida(usuario.Foto))
+            {
+                TwitterPoster TWPoster = new TwitterPoster();
+                TWPoster.Add(usuario);
+            }
         }
     }
 }
