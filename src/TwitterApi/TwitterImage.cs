@@ -101,6 +101,7 @@ namespace TwitterUCU
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex);
                 // log exception somewhere
                 return "Unknown error publishing to Twitter";
             }

@@ -4,10 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="..\TwitterApi\Library.csproj"/>
-  </ItemGroup>
-    <ItemGroup>
-    <PackageReference Include="..\CognitiveApi\Library.csproj"/>
+    <ProjectReference Include="..\TwitterApi\Library.csproj"/>
+    <ProjectReference Include="..\CognitiveApi\Library.csproj"/>
   </ItemGroup>
 
 </Project>
